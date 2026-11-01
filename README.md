@@ -21,13 +21,11 @@ python3 -m http.server 8000
 
 Vor dem Veröffentlichen unter eigener Domain bitte noch erledigen:
 
-- [ ] **Impressum** in `index.html` ausfüllen (Platzhalter im Fußbereich,
-      Pflicht nach § 5 ECG, sobald die Seite öffentlich erreichbar ist)
+- [x] **Impressum** nach § 25 MedienG: Name, Wohnort, Gegenstand und
+      grundlegende Richtung stehen im Fußbereich
 - [ ] **E-Mail-Adressen** im Abschnitt „Mitmachen" gegenprüfen
       (Stand der Recherche: Oktober 2026)
-- [ ] **E-Mail-Adresse im Impressum** um Name und Wohnort ergänzen,
-      sobald geklärt (§ 25 MedienG verlangt für natürliche Personen Name und
-      Wohnort, keine Straßenanschrift)
+
 
 Unabhängig davon, und nur **einmal** von **einer** Person zu senden:
 `daten/ifg-anfrage.md`, ein Informationsbegehren nach dem
