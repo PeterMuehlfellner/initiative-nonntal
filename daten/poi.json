@@ -1,0 +1,973 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-31T21:17:06Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 266071001,
+  "lat": 47.7966712,
+  "lon": 13.0497703,
+  "tags": {
+    "amenity": "university",
+    "education": "university",
+    "name": "ÖH Österreichische Hochschülerschaft"
+  }
+},
+{
+  "type": "node",
+  "id": 579326325,
+  "lat": 47.7983769,
+  "lon": 13.0436008,
+  "tags": {
+    "amenity": "school",
+    "education": "school",
+    "name": "ICT&S Center der Universität Salzburg"
+  }
+},
+{
+  "type": "node",
+  "id": 794092951,
+  "lat": 47.7930435,
+  "lon": 13.0508085,
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:country": "AT",
+    "addr:housenumber": "10",
+    "addr:postcode": "5020",
+    "addr:street": "Erzbischof-Gebhard-Straße",
+    "amenity": "rehearsal_studio",
+    "at_bev:addr_date": "2023-04-15",
+    "contact:email": "info@mozarteumorchester.at",
+    "contact:facebook": "https://www.facebook.com/Mozarteumorchester",
+    "contact:phone": "+43 662 843571",
+    "contact:website": "https://www.mozarteumorchester.at/orchesterhaus/",
+    "name": "Orchesterhaus Mozarteum Orchester"
+  }
+},
+{
+  "type": "node",
+  "id": 1813801309,
+  "lat": 47.7878004,
+  "lon": 13.0590063,
+  "tags": {
+    "access": "private",
+    "leisure": "playground"
+  }
+},
+{
+  "type": "node",
+  "id": 3210317252,
+  "lat": 47.7963528,
+  "lon": 13.0529203,
+  "tags": {
+    "access": "private",
+    "leisure": "playground"
+  }
+},
+{
+  "type": "node",
+  "id": 3673971601,
+  "lat": 47.7973077,
+  "lon": 13.0419421,
+  "tags": {
+    "amenity": "arts_centre",
+    "check_date": "2026-02-05",
+    "name": "Stefan Zweig Center",
+    "wheelchair": "limited",
+    "wikidata": "Q1322404"
+  }
+},
+{
+  "type": "node",
+  "id": 4541457716,
+  "lat": 47.7977758,
+  "lon": 13.0426036,
+  "tags": {
+    "amenity": "theatre",
+    "check_date": "2024-11-17",
+    "name": "Haus für Mozart",
+    "wheelchair": "yes",
+    "wikidata": "Q493923",
+    "wikipedia": "de:Haus für Mozart"
+  }
+},
+{
+  "type": "node",
+  "id": 6274079779,
+  "lat": 47.7885738,
+  "lon": 13.0602939,
+  "tags": {
+    "amenity": "social_facility",
+    "check_date": "2023-08-22",
+    "name": "Fairteiler Nawi",
+    "opening_hours": "Mo-Sa 08:00-20:00",
+    "operator": "Foodsharing Salzburg",
+    "social_facility": "food_bank",
+    "website": "https://foodsharing.at/?page=fairteiler&sub=ft&bid=810&id=362",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6274079780,
+  "lat": 47.7984457,
+  "lon": 13.0506560,
+  "tags": {
+    "amenity": "social_facility",
+    "check_date": "2026-06-03",
+    "check_date:opening_hours": "2026-06-03",
+    "name": "Fairteiler Geswi",
+    "opening_hours": "Mo-Sa 08:00-20:00",
+    "operator": "Foodsharing Salzburg",
+    "social_facility": "food_bank",
+    "website": "https://foodsharing.at/?page=fairteiler&bid=810&sub=ft&id=361",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6312416637,
+  "lat": 47.7938480,
+  "lon": 13.0564121,
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:housenumber": "5",
+    "addr:postcode": "5020",
+    "addr:street": "Ulrike-Gschwandtner-Straße",
+    "amenity": "kindergarten",
+    "check_date": "2026-08-11",
+    "education": "kindergarten",
+    "email": "krabbelstubeoffice.arge@gmx.at",
+    "name": "Krabbelgruppe Verein Studierender Eltern",
+    "operator": "Krabbelstube Verein Studierender Eltern",
+    "phone": "+43 662 840585"
+  }
+},
+{
+  "type": "node",
+  "id": 8860537924,
+  "lat": 47.7986451,
+  "lon": 13.0454743,
+  "tags": {
+    "amenity": "university",
+    "education": "university",
+    "name": "Alte Geschichte"
+  }
+},
+{
+  "type": "node",
+  "id": 9580595498,
+  "lat": 47.7931551,
+  "lon": 13.0533980,
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:country": "AT",
+    "addr:housenumber": "11",
+    "addr:postcode": "5020",
+    "addr:street": "Erzabt-Klotz-Straße",
+    "amenity": "school",
+    "contact:email": "ausbildung.sbg@diakoniewerk.at",
+    "contact:phone": "+43 662 638553000",
+    "contact:website": "https://ausbildung.diakoniewerk.at/schulstandorte/schule-fuer-sozialbetreuungsberufe-salzburg",
+    "education": "school",
+    "name": "Schule für Sozialbetreuungsberufe Salzburg",
+    "operator": "Diakoniewerk Salzburg",
+    "operator:type": "religious"
+  }
+},
+{
+  "type": "node",
+  "id": 9580901021,
+  "lat": 47.7924282,
+  "lon": 13.0621748,
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:country": "AT",
+    "addr:housenumber": "8a",
+    "addr:postcode": "5020",
+    "addr:street": "Franz-Hinterholzer-Kai",
+    "amenity": "school",
+    "education": "school",
+    "name": "Priv. Evangelische MS, SS und PTS - Integration mit Montessori",
+    "operator:type": "religious",
+    "website": "https://www.diakonie.cc/mittelschule.html"
+  }
+},
+{
+  "type": "node",
+  "id": 9581391083,
+  "lat": 47.7926561,
+  "lon": 13.0538859,
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:country": "AT",
+    "addr:housenumber": "6-8",
+    "addr:postcode": "5020",
+    "addr:street": "Viktor-Keldorfer-Straße",
+    "amenity": "school",
+    "education": "school",
+    "name": "Praxisvolksschule der Pädagogischen Hochschule Salzburg Stefan Zweig",
+    "website": "https://pvs.salzburg.at/"
+  }
+},
+{
+  "type": "way",
+  "id": 24474163,
+  "center": {
+    "lat": 47.7984459,
+    "lon": 13.0504048
+  },
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:country": "AT",
+    "addr:housenumber": "42",
+    "addr:postcode": "5020",
+    "addr:street": "Rudolfskai",
+    "alt_name": "Geswi",
+    "amenity": "university",
+    "building": "university",
+    "building:levels": "3",
+    "check_date": "2026-09-16",
+    "check_date:opening_hours": "2026-09-16",
+    "education": "university",
+    "email": "GW-Fakultaetsbuero@plus.ac.at",
+    "name": "Paris Lodron Universität Salzburg - Kultur- u. Gesellschaftswissenschaftliche Fakultät",
+    "opening_hours": "Mo, We-Th 09:00-12:00; Tu 09:00-12:00, 14:00-16:00",
+    "phone": "+43 662 80448000",
+    "roof:levels": "0",
+    "roof:shape": "flat",
+    "website": "https://www.plus.ac.at/gesellschaftswissenschaftliche-fakultaet/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 38010227,
+  "center": {
+    "lat": 47.7926911,
+    "lon": 13.0622558
+  },
+  "tags": {
+    "access": "private",
+    "leisure": "playground",
+    "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 38050817,
+  "center": {
+    "lat": 47.7968505,
+    "lon": 13.0547178
+  },
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:country": "AT",
+    "addr:housenumber": "3",
+    "addr:postcode": "5020",
+    "addr:street": "Hellbrunner Straße",
+    "amenity": "arts_centre",
+    "at_bev:addr_date": "2018-10-01",
+    "building": "retail",
+    "building:levels": "2",
+    "check_date": "2025-09-17",
+    "name": "Künstlerhaus",
+    "roof:levels": "1",
+    "roof:shape": "pyramidal",
+    "wheelchair": "limited",
+    "wikidata": "Q1797144",
+    "wikipedia": "de:Künstlerhaus Salzburg"
+  }
+},
+{
+  "type": "way",
+  "id": 38050834,
+  "center": {
+    "lat": 47.7925204,
+    "lon": 13.0622791
+  },
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:country": "AT",
+    "addr:housenumber": "8",
+    "addr:postcode": "5020",
+    "addr:street": "Franz-Hinterholzer-Kai",
+    "after_school": "yes",
+    "amenity": "kindergarten",
+    "at_bev:addr_date": "2024-10-01",
+    "building": "kindergarten",
+    "building:levels": "3",
+    "check_date": "2026-03-24",
+    "education": "kindergarten",
+    "name": "Insel - Haus der Jugend",
+    "operator": "Guter Nachbar Salzburg",
+    "roof:levels": "0",
+    "roof:shape": "gabled"
+  }
+},
+{
+  "type": "way",
+  "id": 38669832,
+  "center": {
+    "lat": 47.7923559,
+    "lon": 13.0626193
+  },
+  "tags": {
+    "amenity": "school",
+    "education": "school",
+    "landuse": "education",
+    "name": "Insel, Haus der Jugend"
+  }
+},
+{
+  "type": "way",
+  "id": 51948104,
+  "center": {
+    "lat": 47.7916718,
+    "lon": 13.0568763
+  },
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:country": "AT",
+    "addr:housenumber": "21",
+    "addr:postcode": "5020",
+    "addr:street": "Akademiestraße",
+    "amenity": "school",
+    "building": "school",
+    "building:levels": "4",
+    "check_date": "2026-10-29",
+    "education": "school",
+    "email": "office@sum-rg.at",
+    "name": "Sport- und Musik-Realgymnasium Salzburg",
+    "phone": "0662627385",
+    "roof:shape": "flat",
+    "website": "https://www.sum-rg.at/"
+  }
+},
+{
+  "type": "way",
+  "id": 55251347,
+  "center": {
+    "lat": 47.7917744,
+    "lon": 13.0578718
+  },
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:country": "AT",
+    "addr:housenumber": "19",
+    "addr:postcode": "5020",
+    "addr:street": "Akademiestraße",
+    "amenity": "school",
+    "building": "school",
+    "building:levels": "5",
+    "check_date": "2026-01-31",
+    "education": "school",
+    "name": "Bundesrealgymnasium Salzburg",
+    "roof:shape": "flat",
+    "website": "https://www.brgsalzburg.at/",
+    "wikidata": "Q82930420",
+    "wikipedia": "de:Bundesrealgymnasium Salzburg"
+  }
+},
+{
+  "type": "way",
+  "id": 64205160,
+  "center": {
+    "lat": 47.7983003,
+    "lon": 13.0442584
+  },
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:country": "AT",
+    "addr:housenumber": "11",
+    "addr:postcode": "5020",
+    "addr:street": "Sigmund-Haffner-Gasse",
+    "amenity": "university",
+    "building": "university",
+    "building:levels": "4",
+    "education": "university",
+    "name": "Toskanatrakt",
+    "operator": "Universität Salzburg - Rechtswissenschaftliche Fakultät",
+    "operator:type": "university",
+    "roof:levels": "1",
+    "roof:shape": "gambrel",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 64933494,
+  "center": {
+    "lat": 47.7965177,
+    "lon": 13.0526548
+  },
+  "tags": {
+    "amenity": "kindergarten",
+    "building": "apartments",
+    "building:levels": "4",
+    "check_date": "2025-10-06",
+    "education": "kindergarten",
+    "name": "Landeskindergarten",
+    "roof:levels": "1",
+    "roof:shape": "hipped"
+  }
+},
+{
+  "type": "way",
+  "id": 104987278,
+  "center": {
+    "lat": 47.7927681,
+    "lon": 13.0513661
+  },
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:country": "AT",
+    "addr:housenumber": "22",
+    "addr:postcode": "5020",
+    "addr:street": "Erzabt-Klotz-Straße",
+    "alt_name": "Petersbrunnhof",
+    "amenity": "theatre",
+    "building": "yes",
+    "check_date": "2024-07-29",
+    "name": "Schauspielhaus Salzburg",
+    "wheelchair": "yes",
+    "wikidata": "Q2232138",
+    "wikipedia": "de:Schauspielhaus Salzburg"
+  }
+},
+{
+  "type": "way",
+  "id": 110874439,
+  "center": {
+    "lat": 47.7889679,
+    "lon": 13.0594127
+  },
+  "tags": {
+    "amenity": "theatre",
+    "building:levels": "2",
+    "building:material": "concrete",
+    "building:part": "yes",
+    "roof:material": "concrete",
+    "roof:shape": "flat",
+    "theatre:type": "amphi"
+  }
+},
+{
+  "type": "way",
+  "id": 127807575,
+  "center": {
+    "lat": 47.7948457,
+    "lon": 13.0541663
+  },
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:housenumber": "1",
+    "addr:postcode": "5020",
+    "addr:street": "Erzabt-Klotz-Straße",
+    "amenity": "university",
+    "building": "public",
+    "building:levels": "4",
+    "check_date": "2026-05-10",
+    "education": "university",
+    "int_name": "University of Salzburg",
+    "name": "Universität Salzburg - Unipark",
+    "roof:shape": "flat",
+    "wheelchair": "yes",
+    "wikidata": "Q27265",
+    "wikipedia": "en:University of Salzburg"
+  }
+},
+{
+  "type": "way",
+  "id": 141693661,
+  "center": {
+    "lat": 47.7930489,
+    "lon": 13.0533598
+  },
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:country": "AT",
+    "addr:housenumber": "11",
+    "addr:postcode": "5020",
+    "addr:street": "Erzabt-Klotz-Straße",
+    "amenity": "school",
+    "at_bev:addr_date": "2018-10-01",
+    "building": "school",
+    "building:levels": "3",
+    "education": "school",
+    "name": "Pädagogische Hochschule Salzburg",
+    "roof:shape": "hipped",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 155039020,
+  "center": {
+    "lat": 47.7939870,
+    "lon": 13.0562463
+  },
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:country": "AT",
+    "addr:housenumber": "5",
+    "addr:postcode": "5020",
+    "addr:street": "Ulrike-Gschwandtner-Straße",
+    "amenity": "arts_centre",
+    "building": "yes",
+    "check_date": "2026-01-21",
+    "name": "ARGEkultur Salzburg",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.argekultur.at/",
+    "wheelchair": "yes",
+    "wikidata": "Q296619",
+    "wikimedia_commons": "Category:ARGEkultur_Salzburg",
+    "wikipedia": "de:ARGEkultur Salzburg"
+  }
+},
+{
+  "type": "way",
+  "id": 158070157,
+  "center": {
+    "lat": 47.7961300,
+    "lon": 13.0539502
+  },
+  "tags": {
+    "amenity": "school",
+    "building": "yes",
+    "education": "school",
+    "name": "Mittelschule Nonntal"
+  }
+},
+{
+  "type": "way",
+  "id": 181748258,
+  "center": {
+    "lat": 47.7951990,
+    "lon": 13.0562046
+  },
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:country": "AT",
+    "addr:housenumber": "7",
+    "addr:postcode": "5020",
+    "addr:street": "Josef-Preis-Allee",
+    "amenity": "school",
+    "at_bev:addr_date": "2018-10-01",
+    "building": "school",
+    "building:levels": "3",
+    "education": "school",
+    "name": "BORG Nonntal",
+    "roof:levels": "1",
+    "roof:shape": "gabled",
+    "website": "https://borgnonntal.at/"
+  }
+},
+{
+  "type": "way",
+  "id": 181748259,
+  "center": {
+    "lat": 47.7957721,
+    "lon": 13.0546190
+  },
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:country": "AT",
+    "addr:housenumber": "3",
+    "addr:postcode": "5020",
+    "addr:street": "Josef-Preis-Allee",
+    "amenity": "school",
+    "at_bev:addr_date": "2018-10-01",
+    "building": "school",
+    "building:levels": "4",
+    "education": "school",
+    "name": "Europa- und Bundesgymnasium Salzburg-Nonntal",
+    "roof:levels": "1",
+    "roof:shape": "gabled",
+    "website": "https://www.bgnonntal.at/"
+  }
+},
+{
+  "type": "way",
+  "id": 181748260,
+  "center": {
+    "lat": 47.7953682,
+    "lon": 13.0554452
+  },
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:country": "AT",
+    "addr:housenumber": "5",
+    "addr:postcode": "5020",
+    "addr:street": "Josef-Preis-Allee",
+    "alt_name": "WRG",
+    "amenity": "school",
+    "at_bev:addr_date": "2018-10-01",
+    "building": "school",
+    "building:levels": "4",
+    "education": "school",
+    "name": "Wirtschaftskundliches Bundesrealgymnasium",
+    "roof:levels": "1",
+    "roof:shape": "gabled",
+    "source": "local knowledge",
+    "website": "https://neu.wrg.salzburg.at/",
+    "wikidata": "Q28871546"
+  }
+},
+{
+  "type": "way",
+  "id": 217621219,
+  "center": {
+    "lat": 47.7993089,
+    "lon": 13.0562265
+  },
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:housenumber": "5",
+    "addr:postcode": "5020",
+    "addr:street": "Dr.-Franz-Rehrl-Platz",
+    "alt_name": "UKH Salzburg",
+    "alt_name_1": "Salzburg UKH",
+    "amenity": "hospital",
+    "check_date": "2026-10-16",
+    "email": "USV2@auva.at",
+    "emergency": "yes",
+    "healthcare": "hospital",
+    "healthcare:speciality": "trauma",
+    "name": "Unfallkrankenhaus Salzburg",
+    "operator": "AUVA",
+    "phone": "+43 5 93 93-44000",
+    "website": "https://auva.at/gesundheitseinrichtungen/ukh-salzburg/",
+    "wheelchair": "yes",
+    "wikidata": "Q2493177",
+    "wikipedia": "de:Unfallkrankenhaus Salzburg"
+  }
+},
+{
+  "type": "way",
+  "id": 260088201,
+  "center": {
+    "lat": 47.7958069,
+    "lon": 13.0550808
+  },
+  "tags": {
+    "amenity": "school",
+    "education": "school",
+    "landuse": "education",
+    "name": "Europa- und Bundesgymnasium Salzburg-Nonntal Karlheinz- Böhm-Gymnasium"
+  }
+},
+{
+  "type": "way",
+  "id": 260088203,
+  "center": {
+    "lat": 47.7911927,
+    "lon": 13.0568558
+  },
+  "tags": {
+    "amenity": "school",
+    "education": "school",
+    "landuse": "education",
+    "name": "Sport- und musisches Realgymnasium",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 312738996,
+  "center": {
+    "lat": 47.7947819,
+    "lon": 13.0544846
+  },
+  "tags": {
+    "amenity": "university",
+    "check_date": "2026-05-10",
+    "education": "university",
+    "name": "Unipark Nonntal",
+    "toilets:wheelchair": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 317621866,
+  "center": {
+    "lat": 47.7974119,
+    "lon": 13.0515527
+  },
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:housenumber": "1",
+    "addr:place": "Kajetanerplatz",
+    "addr:postcode": "5020",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "healthcare:speciality": "emergency",
+    "name": "Krankenhaus der Barmherzigen Brüder Salzburg",
+    "operator": "Konvent der Barmherzigen Brüder Salzburg",
+    "operator:type": "religious",
+    "short_name": "BHB Salzburg",
+    "website": "https://www.barmherzige-brueder.at/portal/salzburg/home",
+    "wheelchair": "yes",
+    "wikidata": "Q105102400",
+    "wikipedia": "de:Krankenhaus der Barmherzigen Brüder (Salzburg)"
+  }
+},
+{
+  "type": "way",
+  "id": 644289855,
+  "center": {
+    "lat": 47.7905186,
+    "lon": 13.0598581
+  },
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:housenumber": "30",
+    "addr:postcode": "5020",
+    "addr:street": "Hellbrunner Straße",
+    "amenity": "social_facility",
+    "check_date": "2026-06-17",
+    "name": "Seniorenheim Hellbrunn",
+    "operator": "Stadt Salzburg",
+    "social_facility": "nursing_home",
+    "social_facility:for": "senior",
+    "website": "https://www.stadt-salzburg.at/internet/leben_in_salzburg/seniorinnen/sh_hellbrunn/seniorenwohnhaus_hellbrunn_359205.htm",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 983682685,
+  "center": {
+    "lat": 47.7970169,
+    "lon": 13.0410587
+  },
+  "tags": {
+    "access": "yes",
+    "leisure": "playground"
+  }
+},
+{
+  "type": "way",
+  "id": 1091650318,
+  "center": {
+    "lat": 47.7927694,
+    "lon": 13.0539946
+  },
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:housenumber": "6",
+    "addr:postcode": "5020",
+    "addr:street": "Viktor-Keldorfer-Straße",
+    "amenity": "school",
+    "building": "yes",
+    "education": "school",
+    "isced:level": "1",
+    "name": "Praxisvolksschule Viktor-Keldorfer-Straße",
+    "operator": "PH Salzburg",
+    "website": "https://pvs.salzburg.at/"
+  }
+},
+{
+  "type": "way",
+  "id": 1214328510,
+  "center": {
+    "lat": 47.7924409,
+    "lon": 13.0542925
+  },
+  "tags": {
+    "access": "yes",
+    "leisure": "playground"
+  }
+},
+{
+  "type": "way",
+  "id": 1305307980,
+  "center": {
+    "lat": 47.7914136,
+    "lon": 13.0555107
+  },
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:country": "AT",
+    "addr:housenumber": "23-25",
+    "addr:postcode": "5020",
+    "addr:street": "Akademiestraße",
+    "amenity": "university",
+    "check_date": "2026-10-29",
+    "contact:facebook": "phsstefanzweig",
+    "contact:instagram": "phsalzburg",
+    "education": "university",
+    "email": "office@phsalzburg.at",
+    "name": "Pädagogische Hochschule Salzburg Stefan Zweig",
+    "note": "Ersatzlösung wegen Umbau",
+    "operator": "Pädagogische Hochschule",
+    "phone": "+43 662 6388-0",
+    "website": "http://www.phsalzburg.at",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 1334198066,
+  "center": {
+    "lat": 47.7882303,
+    "lon": 13.0425789
+  },
+  "tags": {
+    "access": "yes",
+    "leisure": "playground",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1356192206,
+  "center": {
+    "lat": 47.7979030,
+    "lon": 13.0585656
+  },
+  "tags": {
+    "access": "yes",
+    "indoor": "no",
+    "leisure": "playground",
+    "opening_hours": "24/7"
+  }
+},
+{
+  "type": "relation",
+  "id": 1014548,
+  "center": {
+    "lat": 47.7989202,
+    "lon": 13.0445040
+  },
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:housenumber": "1",
+    "addr:postcode": "5020",
+    "addr:street": "Churfürststraße",
+    "amenity": "university",
+    "building": "university",
+    "building:levels": "4",
+    "description": "Juridische Fakultät",
+    "education": "university",
+    "name": "Paris Lodron Universität Salzburg",
+    "name:ko": "토스카나트라크트",
+    "operator": "Universität Salzburg - Rechtswissenschaftliche Fakultät",
+    "operator:type": "university",
+    "roof:levels": "1",
+    "roof:shape": "gabled",
+    "type": "multipolygon",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "relation",
+  "id": 1537565,
+  "center": {
+    "lat": 47.7904599,
+    "lon": 13.0449899
+  },
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:country": "AT",
+    "addr:housename": "Seniorenheim Nonntal",
+    "addr:housenumber": "4",
+    "addr:postcode": "5020",
+    "addr:street": "Karl-Höller-Straße",
+    "amenity": "retirement_home",
+    "building": "yes",
+    "name": "Seniorenheim Nonntal",
+    "type": "multipolygon",
+    "website": "https://www.stadt-salzburg.at/internet/leben_in_salzburg/seniorinnen/seniorenwohnhaus_nonntal/seniorenwohnhaus_nonntal_359225.htm"
+  }
+},
+{
+  "type": "relation",
+  "id": 1559740,
+  "center": {
+    "lat": 47.7945207,
+    "lon": 13.0579678
+  },
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:country": "AT",
+    "addr:housenumber": "14",
+    "addr:postcode": "5020",
+    "addr:street": "Hellbrunner Straße",
+    "amenity": "school",
+    "building": "school",
+    "building:levels": "4",
+    "check_date": "2026-10-29",
+    "education": "school",
+    "email": "office@abz-stjosef.at",
+    "name": "Ausbildungszentrum St. Josef",
+    "operator:type": "religious",
+    "phone": "0043 662 84217710",
+    "type": "multipolygon",
+    "website": "https://www.abz-stjosef.at/"
+  }
+},
+{
+  "type": "relation",
+  "id": 2087611,
+  "center": {
+    "lat": 47.7977693,
+    "lon": 13.0446723
+  },
+  "tags": {
+    "amenity": "university",
+    "building": "yes",
+    "education": "university",
+    "name": "Paris Lodron Universität",
+    "type": "multipolygon",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "relation",
+  "id": 2141054,
+  "center": {
+    "lat": 47.7884620,
+    "lon": 13.0601980
+  },
+  "tags": {
+    "addr:city": "Salzburg",
+    "addr:country": "AT",
+    "addr:housenumber": "34",
+    "addr:postcode": "5020",
+    "addr:street": "Hellbrunner Straße",
+    "alt_name": "Nawi",
+    "amenity": "university",
+    "building": "yes",
+    "name": "Naturwissenschaftliche Fakultät",
+    "toilets:wheelchair": "yes",
+    "type": "multipolygon",
+    "wheelchair": "limited",
+    "wikidata": "Q136745793"
+  }
+},
+{
+  "type": "relation",
+  "id": 2882269,
+  "center": {
+    "lat": 47.7993188,
+    "lon": 13.0562578
+  },
+  "tags": {
+    "amenity": "hospital",
+    "emergency": "yes",
+    "name": "Unfallkrankenhaus Salzburg",
+    "type": "collection",
+    "website": "http://www.ukh-salzburg.at",
+    "wheelchair": "yes"
+  }
+}
+
+  ]
+}

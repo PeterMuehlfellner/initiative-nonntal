@@ -1,0 +1,478 @@
+{
+  "quelle": "OpenStreetMap-Mitwirkende (ODbL), Abfragen in daten/overpass-*.ql",
+  "fotostandorte": [
+    {
+      "titel": "Ampelkreuzung, Blick nach Südwesten",
+      "lat": 47.7926297,
+      "lon": 13.0522244,
+      "blickrichtung_grad": 244,
+      "zweck": "Der gesamte gerade Abschnitt in einem Bild, bis zur Kurve."
+    },
+    {
+      "titel": "Haltestelle Richtung Süden, quer über die Fahrbahn",
+      "lat": 47.79214825,
+      "lon": 13.0506856,
+      "blickrichtung_grad": 154,
+      "zweck": "Die Querung, die hier täglich stattfindet: drei Fahrstreifen, kein Übergang."
+    },
+    {
+      "titel": "Haltestelle Richtung Süden, Blick nach Nordosten",
+      "lat": 47.79214825,
+      "lon": 13.0506856,
+      "blickrichtung_grad": 64,
+      "zweck": "Zeigt, wie weit die Bedarfsampel entfernt ist (123 m)."
+    },
+    {
+      "titel": "Haltestelle Richtung Zentrum, quer über die Fahrbahn",
+      "lat": 47.79203251931927,
+      "lon": 13.050673770061257,
+      "blickrichtung_grad": 334,
+      "zweck": "Dieselbe Situation von der anderen Seite."
+    },
+    {
+      "titel": "Kurve, Blick nach Nordosten",
+      "lat": 47.7916326,
+      "lon": 13.0493123,
+      "blickrichtung_grad": 64,
+      "zweck": "Die Gerade vom südwestlichen Ende aus, die Sicht der Zufahrenden."
+    },
+    {
+      "titel": "Bedarfsampel an der Kreuzung",
+      "lat": 47.792562,
+      "lon": 13.052117,
+      "blickrichtung_grad": 244,
+      "zweck": "Drucktaster und Wartesituation; mit sichtbarer Uhr als Beleg der Wartezeit."
+    }
+  ],
+  "stand_osm": "2026-10-30T21:24:51Z",
+  "korridor": {
+    "beschreibung": "Erzabt-Klotz-Straße von der Ampelkreuzung Petersbrunnstraße/Akademiestraße bis in die Kurve zur Nonntaler Hauptstraße",
+    "laenge_m": 291.0,
+    "gerade_laenge_m": 233.9,
+    "gerade_von_station_m": 11.0,
+    "gerade_bis_station_m": 244.9,
+    "gerade_richtungsabweichung_grad": 4.6,
+    "kurvenwinkel_grad": 74.4,
+    "tempolimit_osm": {
+      "25353604": "–",
+      "134631796": "–",
+      "1164458568": "50",
+      "134631797": "50",
+      "314950230": "50",
+      "265570933": "50"
+    },
+    "fahrstreifen": "3",
+    "querschnitt_tags": {
+      "cycleway:left": "share_busway",
+      "cycleway:right": "lane",
+      "lanes": "3",
+      "lanes:backward": "1",
+      "lanes:forward": "1",
+      "lanes:psv:backward": "1",
+      "maxspeed": "50",
+      "ref": "L104",
+      "sidewalk": "both",
+      "trolley_wire": "yes"
+    }
+  },
+  "haltestellen": [
+    {
+      "label": "Haltestelle Richtung Zentrum",
+      "lat": 47.79203251931927,
+      "lon": 13.050673770061257,
+      "steig_lat": 47.79203251931927,
+      "steig_lon": 13.050673770061257,
+      "station": 133.9,
+      "seite": "suedost",
+      "seite_sign": 1,
+      "steig_abstand_m": 4.9,
+      "quelle_lage": "vor Ort korrigiert (OSM-Lage abweichend)",
+      "weg_zur_naechsten_querung_m": 122.9,
+      "naechste_querung": "Bedarfsampel über die Erzabt-Klotz-Straße",
+      "umweg_hin_und_zurueck_m": 245.8
+    },
+    {
+      "label": "Haltestelle Richtung Süden",
+      "lat": 47.7920718,
+      "lon": 13.0506442,
+      "steig_lat": 47.79214825,
+      "steig_lon": 13.0506856,
+      "station": 133.9,
+      "seite": "nordwest",
+      "seite_sign": -1,
+      "steig_abstand_m": 6.2,
+      "quelle_lage": "OpenStreetMap",
+      "weg_zur_naechsten_querung_m": 122.9,
+      "naechste_querung": "Bedarfsampel über die Erzabt-Klotz-Straße",
+      "umweg_hin_und_zurueck_m": 245.8
+    }
+  ],
+  "versatz_der_haltestellen_m": 0.0,
+  "querungen": [
+    {
+      "label": "Bedarfsampel über die Erzabt-Klotz-Straße",
+      "art": "ampel",
+      "lat": 47.792562,
+      "lon": 13.052117,
+      "station": 11.0
+    }
+  ],
+  "kartenmarken": [
+    {
+      "nr": 1,
+      "lat": 47.7926297,
+      "lon": 13.0522244,
+      "farbe": "danger",
+      "kurz": "Bedarfsampel, die einzige Querung",
+      "lang": "Kreuzung Petersbrunnstraße/Akademiestraße. Die Bedarfsampel über die Erzabt-Klotz-Straße ist die einzige Stelle, an der dieser Abschnitt überquert werden kann."
+    },
+    {
+      "nr": 2,
+      "lat": 47.79207193880905,
+      "lon": 13.050644615840522,
+      "farbe": "transit",
+      "kurz": "Bushaltestellen, hier wird gequert",
+      "lang": "Die Steige der Linien 5, 9 und 25 liegen einander gegenüber, der nordwestliche mit Wartehäuschen. Gequert wird auf dieser Höhe, über die gesamte Fahrbahn und ohne Übergang."
+    },
+    {
+      "nr": 3,
+      "lat": 47.79148704410495,
+      "lon": 13.04910309229394,
+      "farbe": "danger",
+      "kurz": "Kurve nach Süden",
+      "lang": "Am Ende der Geraden schwenkt die Landesstraße L 104 auf rund 46 Metern um 74° nach Süden in die Nonntaler Hauptstraße; der Kurvenradius beträgt etwa 36 Meter. Der westliche Ast der Erzabt-Klotz-Straße ist eine Nebenstraße."
+    },
+    {
+      "nr": 4,
+      "lat": 47.7929,
+      "lon": 13.05385,
+      "farbe": "school",
+      "kurz": "Schulen, Hochschule, Unipark",
+      "lang": "Mehrere Bildungseinrichtungen nordöstlich der Kreuzung; der Weg dorthin führt über diesen Abschnitt."
+    }
+  ],
+  "anhaltewege": {
+    "annahmen": {
+      "reaktionszeit_s": 1.0,
+      "verzoegerung_m_s2": 8.0,
+      "hinweis": "Gefahrenbremsung auf trockenem Asphalt"
+    },
+    "werte": [
+      {
+        "kmh": 30,
+        "reaktionsweg_m": 8.3,
+        "bremsweg_m": 4.3,
+        "anhalteweg_m": 12.6
+      },
+      {
+        "kmh": 50,
+        "reaktionsweg_m": 13.9,
+        "bremsweg_m": 12.1,
+        "anhalteweg_m": 26.0
+      },
+      {
+        "kmh": 60,
+        "reaktionsweg_m": 16.7,
+        "bremsweg_m": 17.4,
+        "anhalteweg_m": 34.1
+      }
+    ],
+    "restgeschwindigkeit_bei_anhalteweg_30_kmh": {
+      "30": 3.9,
+      "50": 50,
+      "60": 60
+    }
+  },
+  "fahrzeit_ueber_die_gerade_s": {
+    "30": 28.1,
+    "50": 16.8
+  },
+  "zeitverlust_durch_tempo_30_s": 11.3,
+  "bebauung": {
+    "hinweis": "Wohngebäude mit mehr als 60 m² Grundfläche, Abstand zur Straßenachse unter 45 m",
+    "anzahl_gebaeude": 18,
+    "anzahl_wohngebaeude": 12,
+    "naechstes_wohngebaeude": {
+      "abstand_achse_m": 8.3,
+      "station_m": 62,
+      "art": "apartments",
+      "grundflaeche_m2": 351,
+      "geschosse": "2",
+      "adresse": "Erzabt-Klotz-Straße 21"
+    },
+    "fahrbahnbreite_geschaetzt_m": 9.899999999999999,
+    "fahrbahnrand_bis_naechster_fassade_m": 3.4,
+    "liste": [
+      {
+        "abstand_achse_m": 8.3,
+        "station_m": 62,
+        "art": "apartments",
+        "grundflaeche_m2": 351,
+        "geschosse": "2",
+        "adresse": "Erzabt-Klotz-Straße 21"
+      },
+      {
+        "abstand_achse_m": 8.3,
+        "station_m": 291,
+        "art": "apartments",
+        "grundflaeche_m2": 641,
+        "geschosse": "4",
+        "adresse": "Nonntaler Hauptstraße 42B"
+      },
+      {
+        "abstand_achse_m": 14.7,
+        "station_m": 271,
+        "art": "apartments",
+        "grundflaeche_m2": 510,
+        "geschosse": "3",
+        "adresse": null
+      },
+      {
+        "abstand_achse_m": 15.8,
+        "station_m": 194,
+        "art": "apartments",
+        "grundflaeche_m2": 369,
+        "geschosse": "2",
+        "adresse": "Erzabt-Klotz-Straße 29"
+      },
+      {
+        "abstand_achse_m": 15.9,
+        "station_m": 120,
+        "art": "apartments",
+        "grundflaeche_m2": 398,
+        "geschosse": "2",
+        "adresse": "Erzabt-Klotz-Straße 25"
+      },
+      {
+        "abstand_achse_m": 16.4,
+        "station_m": 225,
+        "art": "detached",
+        "grundflaeche_m2": 200,
+        "geschosse": "2",
+        "adresse": "Erzabt-Klotz-Straße 31"
+      },
+      {
+        "abstand_achse_m": 19.9,
+        "station_m": 268,
+        "art": "detached",
+        "grundflaeche_m2": 208,
+        "geschosse": "2",
+        "adresse": "Nonntaler Hauptstraße 42"
+      },
+      {
+        "abstand_achse_m": 26.3,
+        "station_m": 30,
+        "art": "yes",
+        "grundflaeche_m2": 209,
+        "geschosse": null,
+        "adresse": "Wäschergasse 1"
+      },
+      {
+        "abstand_achse_m": 26.6,
+        "station_m": 0,
+        "art": "apartments",
+        "grundflaeche_m2": 200,
+        "geschosse": "3",
+        "adresse": "Erzabt-Klotz-Straße 17"
+      },
+      {
+        "abstand_achse_m": 26.9,
+        "station_m": 291,
+        "art": "yes",
+        "grundflaeche_m2": 334,
+        "geschosse": null,
+        "adresse": "Nonntaler Hauptstraße 37D"
+      },
+      {
+        "abstand_achse_m": 27.7,
+        "station_m": 36,
+        "art": "yes",
+        "grundflaeche_m2": 1029,
+        "geschosse": null,
+        "adresse": "Erzabt-Klotz-Straße 22"
+      },
+      {
+        "abstand_achse_m": 28.3,
+        "station_m": 65,
+        "art": "detached",
+        "grundflaeche_m2": 95,
+        "geschosse": "2",
+        "adresse": "Wäschergasse 4"
+      },
+      {
+        "abstand_achse_m": 32.5,
+        "station_m": 79,
+        "art": "yes",
+        "grundflaeche_m2": 1385,
+        "geschosse": null,
+        "adresse": null
+      },
+      {
+        "abstand_achse_m": 34.3,
+        "station_m": 0,
+        "art": "yes",
+        "grundflaeche_m2": 463,
+        "geschosse": null,
+        "adresse": "Petersbrunnstraße 19"
+      },
+      {
+        "abstand_achse_m": 38.8,
+        "station_m": 257,
+        "art": "yes",
+        "grundflaeche_m2": 348,
+        "geschosse": null,
+        "adresse": null
+      },
+      {
+        "abstand_achse_m": 39.1,
+        "station_m": 291,
+        "art": "apartments",
+        "grundflaeche_m2": 463,
+        "geschosse": "3",
+        "adresse": "Nonntaler Hauptstraße 37E"
+      },
+      {
+        "abstand_achse_m": 41.4,
+        "station_m": 0,
+        "art": "apartments",
+        "grundflaeche_m2": 202,
+        "geschosse": "3",
+        "adresse": "Erzabt-Klotz-Straße 15"
+      },
+      {
+        "abstand_achse_m": 44.8,
+        "station_m": 0,
+        "art": "apartments",
+        "grundflaeche_m2": 228,
+        "geschosse": "3",
+        "adresse": "Viktor-Keldorfer-Straße 1"
+      }
+    ]
+  },
+  "schutzbeduerftige_ziele_im_umkreis_600m": [
+    {
+      "name": "Schauspielhaus Salzburg",
+      "art": "theatre",
+      "entfernung_m": 46
+    },
+    {
+      "name": "Orchesterhaus Mozarteum Orchester",
+      "art": "rehearsal_studio",
+      "entfernung_m": 92
+    },
+    {
+      "name": "Pädagogische Hochschule Salzburg",
+      "art": "school",
+      "entfernung_m": 97,
+      "stufe": "erwachsene"
+    },
+    {
+      "name": "Schule für Sozialbetreuungsberufe Salzburg",
+      "art": "school",
+      "entfernung_m": 105,
+      "stufe": "erwachsene"
+    },
+    {
+      "name": "Praxisvolksschule der Pädagogischen Hochschule Salzburg Stefan Zweig",
+      "art": "school",
+      "entfernung_m": 124,
+      "stufe": "kinder"
+    },
+    {
+      "name": "Seniorenheim Nonntal",
+      "art": "retirement_home",
+      "entfernung_m": 321
+    },
+    {
+      "name": "ARGEkultur Salzburg",
+      "art": "arts_centre",
+      "entfernung_m": 337
+    },
+    {
+      "name": "Krabbelgruppe Verein Studierender Eltern",
+      "art": "kindergarten",
+      "entfernung_m": 341,
+      "stufe": "kinder"
+    },
+    {
+      "name": "Sport- und Musik-Realgymnasium Salzburg",
+      "art": "school",
+      "entfernung_m": 364,
+      "stufe": "kinder"
+    },
+    {
+      "name": "Wirtschaftskundliches Bundesrealgymnasium",
+      "art": "school",
+      "entfernung_m": 389,
+      "stufe": "kinder"
+    },
+    {
+      "name": "Europa- und Bundesgymnasium Salzburg-Nonntal",
+      "art": "school",
+      "entfernung_m": 393,
+      "stufe": "kinder"
+    },
+    {
+      "name": "Mittelschule Nonntal",
+      "art": "school",
+      "entfernung_m": 410,
+      "stufe": "kinder"
+    },
+    {
+      "name": "BORG Nonntal",
+      "art": "school",
+      "entfernung_m": 413,
+      "stufe": "kinder"
+    },
+    {
+      "name": "Bundesrealgymnasium Salzburg",
+      "art": "school",
+      "entfernung_m": 433,
+      "stufe": "kinder"
+    },
+    {
+      "name": "Landeskindergarten",
+      "art": "kindergarten",
+      "entfernung_m": 434,
+      "stufe": "kinder"
+    },
+    {
+      "name": "Ausbildungszentrum St. Josef",
+      "art": "school",
+      "entfernung_m": 478,
+      "stufe": "erwachsene"
+    },
+    {
+      "name": "Universitätscampus Unipark Nonntal",
+      "art": "university",
+      "entfernung_m": 486,
+      "stufe": "erwachsene"
+    },
+    {
+      "name": "Künstlerhaus",
+      "art": "arts_centre",
+      "entfernung_m": 506
+    },
+    {
+      "name": "Krankenhaus der Barmherzigen Brüder Salzburg",
+      "art": "hospital",
+      "entfernung_m": 535
+    }
+  ],
+  "anzahl_nach_art": {
+    "theatre": 1,
+    "rehearsal_studio": 1,
+    "school": 10,
+    "retirement_home": 1,
+    "arts_centre": 2,
+    "kindergarten": 2,
+    "university": 1,
+    "hospital": 1
+  },
+  "bildung_nach_stufe": {
+    "schulen_fuer_kinder": 7,
+    "kindergaerten": 2,
+    "erwachsenenbildung": 4,
+    "naechste_kindereinrichtung_m": 124
+  }
+}

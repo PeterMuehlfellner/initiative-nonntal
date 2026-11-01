@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 980 352" xmlns="http://www.w3.org/2000/svg" class="karte karte--halt" role="img" aria-labelledby="ad-titel ad-desc"><title id="ad-titel">Anhaltewege bei 30, 50 und 60 km/h</title><desc id="ad-desc">Vergleich der Anhaltewege: 30 km/h: 13 Meter; 50 km/h: 26 Meter; 60 km/h: 34 Meter. An der Stelle, an der ein Fahrzeug mit 30 km/h bereits steht, hat ein Fahrzeug mit 50 km/h die Bremsung noch nicht begonnen.</desc><style>
+  svg {
+    --k-paper: #f2f5f6;
+    --k-ink: #15191c;
+    --k-inksoft: #566066;
+    --k-bldg: #e3e8ea;
+    --k-bldgline: #d5dbde;
+    --k-green: #dde6de;
+    --k-road: #ffffff;
+    --k-roadcase: #d4dade;
+    --k-foot: #b3bbc0;
+    --k-danger: #d12b1c;
+    --k-dangersoft: #f8ddd8;
+    --k-good: #0f7a6b;
+    --k-goodsoft: #d6eae6;
+    --k-transit: #1f55c9;
+    --k-school: #6344bd;
+    --k-grid: #dde3e6;
+  }
+  @media (prefers-color-scheme: dark) {
+    svg {
+      --k-paper: #0f1315;
+      --k-ink: #e6eaec;
+      --k-inksoft: #949ea4;
+      --k-bldg: #191e21;
+      --k-bldgline: #20262a;
+      --k-green: #152018;
+      --k-road: #272e32;
+      --k-roadcase: #1b2125;
+      --k-foot: #3f474d;
+      --k-danger: #ff6a4d;
+      --k-dangersoft: #3a1712;
+      --k-good: #2ec4ab;
+      --k-goodsoft: #0d2a25;
+      --k-transit: #7aa6ff;
+      --k-school: #ad92ff;
+      --k-grid: #232a2e;
+    }
+  }
+</style><rect width="980" height="352" fill="var(--k-paper)"/><g font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif" font-size="8.5" fill="var(--k-inksoft)"><path d="M150 44 V252" stroke="var(--k-grid)" stroke-width="1"/><text x="150" y="36" text-anchor="middle">0</text><path d="M260 44 V252" stroke="var(--k-grid)" stroke-width="1"/><text x="260" y="36" text-anchor="middle">5</text><path d="M370 44 V252" stroke="var(--k-grid)" stroke-width="1"/><text x="370" y="36" text-anchor="middle">10</text><path d="M480 44 V252" stroke="var(--k-grid)" stroke-width="1"/><text x="480" y="36" text-anchor="middle">15</text><path d="M590 44 V252" stroke="var(--k-grid)" stroke-width="1"/><text x="590" y="36" text-anchor="middle">20</text><path d="M700 44 V252" stroke="var(--k-grid)" stroke-width="1"/><text x="700" y="36" text-anchor="middle">25</text><path d="M810 44 V252" stroke="var(--k-grid)" stroke-width="1"/><text x="810" y="36" text-anchor="middle">30</text><path d="M920 44 V252" stroke="var(--k-grid)" stroke-width="1"/><text x="920" y="36" text-anchor="middle">35</text><path d="M1030 44 V252" stroke="var(--k-grid)" stroke-width="1"/><text x="1030" y="36" text-anchor="middle">40</text><text x="1046" y="36">Meter</text></g><text x="132" y="88" text-anchor="end" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif" font-size="17" font-weight="700" fill="var(--k-good)">30 km/h</text><rect x="150" y="68" width="182.6" height="30" fill="var(--k-good)" opacity="0.25" rx="1"/><rect x="332.6" y="68" width="94.6" height="30" fill="var(--k-good)" opacity="0.8" rx="1"/><text x="437.2" y="88" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif" font-size="13" font-weight="700" fill="var(--k-good)">13 m</text><text x="154" y="63" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif" font-size="9" fill="var(--k-inksoft)">Reaktion</text><text x="337" y="63" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif" font-size="9" fill="var(--k-inksoft)">Bremsung</text><text x="132" y="160" text-anchor="end" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif" font-size="17" font-weight="700" fill="var(--k-danger)">50 km/h</text><rect x="150" y="140" width="305.8" height="30" fill="var(--k-danger)" opacity="0.25" rx="1"/><rect x="455.8" y="140" width="266.2" height="30" fill="var(--k-danger)" opacity="0.8" rx="1"/><text x="732.0" y="160" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif" font-size="13" font-weight="700" fill="var(--k-danger)">26 m</text><text x="132" y="232" text-anchor="end" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif" font-size="17" font-weight="700" fill="var(--k-danger)">60 km/h</text><rect x="150" y="212" width="367.4" height="30" fill="var(--k-danger)" opacity="0.25" rx="1"/><rect x="517.4" y="212" width="382.8" height="30" fill="var(--k-danger)" opacity="0.8" rx="1"/><text x="910.2" y="232" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif" font-size="13" font-weight="700" fill="var(--k-danger)">34 m</text><path d="M427.2 44 V268" stroke="var(--k-ink)" stroke-width="2" stroke-dasharray="6 4"/><g transform="translate(427.2 290)" fill="var(--k-ink)"><circle cx="0" cy="-19" r="3.6"/><path d="M0 -15 V-6 M0 -12 L-5.5 -8 M0 -12 L5.5 -8 M0 -6 L-5 2.5 M0 -6 L5 2.5" stroke="var(--k-ink)" stroke-width="2.1" fill="none" stroke-linecap="round"/></g><text x="443.2" y="282" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif" font-size="11.5" font-weight="700" fill="var(--k-ink)">Bei 30 km/h steht das Fahrzeug an dieser Stelle.</text><text x="443.2" y="298" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif" font-size="11.5" fill="var(--k-ink)">Bei 50 km/h ist die Bremsung hier noch nicht eingeleitet: Die Reaktionszeit allein dauert länger.</text><text x="443.2" y="314" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif" font-size="11" fill="var(--k-inksoft)">Die Aufprallgeschwindigkeit betrüge 50 km/h.</text><text x="490" y="342" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif" font-size="9" fill="var(--k-inksoft)">Annahmen: Reaktionszeit 1,0 s, Gefahrenbremsung 8 m/s² (trockener Asphalt) · Rechenweg in daten/build.py</text></svg>

@@ -1,0 +1,81 @@
+/* Automatisch erzeugt von daten/build.py, nicht von Hand bearbeiten. */
+/* Dieselben Farben verwenden die SVG-Grafiken in karten.js. */
+
+:root {
+  --k-paper: #f2f5f6;
+  --k-ink: #15191c;
+  --k-inksoft: #566066;
+  --k-bldg: #e3e8ea;
+  --k-bldgline: #d5dbde;
+  --k-green: #dde6de;
+  --k-road: #ffffff;
+  --k-roadcase: #d4dade;
+  --k-foot: #b3bbc0;
+  --k-danger: #d12b1c;
+  --k-dangersoft: #f8ddd8;
+  --k-good: #0f7a6b;
+  --k-goodsoft: #d6eae6;
+  --k-transit: #1f55c9;
+  --k-school: #6344bd;
+  --k-grid: #dde3e6;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --k-paper: #0f1315;
+    --k-ink: #e6eaec;
+    --k-inksoft: #949ea4;
+    --k-bldg: #191e21;
+    --k-bldgline: #20262a;
+    --k-green: #152018;
+    --k-road: #272e32;
+    --k-roadcase: #1b2125;
+    --k-foot: #3f474d;
+    --k-danger: #ff6a4d;
+    --k-dangersoft: #3a1712;
+    --k-good: #2ec4ab;
+    --k-goodsoft: #0d2a25;
+    --k-transit: #7aa6ff;
+    --k-school: #ad92ff;
+    --k-grid: #232a2e;
+  }
+}
+
+:root[data-theme="dark"] {
+  --k-paper: #0f1315;
+  --k-ink: #e6eaec;
+  --k-inksoft: #949ea4;
+  --k-bldg: #191e21;
+  --k-bldgline: #20262a;
+  --k-green: #152018;
+  --k-road: #272e32;
+  --k-roadcase: #1b2125;
+  --k-foot: #3f474d;
+  --k-danger: #ff6a4d;
+  --k-dangersoft: #3a1712;
+  --k-good: #2ec4ab;
+  --k-goodsoft: #0d2a25;
+  --k-transit: #7aa6ff;
+  --k-school: #ad92ff;
+  --k-grid: #232a2e;
+}
+
+:root[data-theme="light"] {
+  --k-paper: #f2f5f6;
+  --k-ink: #15191c;
+  --k-inksoft: #566066;
+  --k-bldg: #e3e8ea;
+  --k-bldgline: #d5dbde;
+  --k-green: #dde6de;
+  --k-road: #ffffff;
+  --k-roadcase: #d4dade;
+  --k-foot: #b3bbc0;
+  --k-danger: #d12b1c;
+  --k-dangersoft: #f8ddd8;
+  --k-good: #0f7a6b;
+  --k-goodsoft: #d6eae6;
+  --k-transit: #1f55c9;
+  --k-school: #6344bd;
+  --k-grid: #dde3e6;
+}

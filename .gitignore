@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Editoren und Betriebssysteme
+.DS_Store
+*.swp
+*~
+
+# Lokale Werkzeugeinstellungen
+.claude/settings.local.json
+
+# Hinweis: Die erzeugten Dateien (assets/karten.js, assets/karte-*.svg,
+# assets/palette.css, daten/messwerte.json, einzelseite.html) sind absichtlich
+# NICHT ignoriert. Die Seite soll ohne Build-Schritt lauffähig sein: Ordner auf
+# einen Webspace legen, fertig. Wer sie neu erzeugen will, ruft
+# `python3 daten/build.py` und `python3 daten/einzeldatei.py` auf.
+
+# Der Ordner snapshots/ stammt aus der Zeit vor diesem Repository und bleibt
+# als Dateikopie liegen. Versionsstände verwaltet ab jetzt git selbst; der
+# 1,7 MB große Seiten-Screenshot darin muss nicht in die Historie. Wer ihn
+# doch mitführen will: `git add -f snapshots/`.
+snapshots/
