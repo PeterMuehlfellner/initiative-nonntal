@@ -511,7 +511,34 @@ def de(x, n=1):
 
 
 # ======================================================== 1. Lagekarte ======
-VIEW = dict(lat0=47.79070, lat1=47.79400, lon0=13.04700, lon1=13.05470)
+# Der Ausschnitt wird aus dem Inhalt abgeleitet, nicht fest eingetragen: Mitte
+# ist der Schwerpunkt dessen, worum es geht (Korridor, Marken, Schulkreis).
+# Vorher lag die Ausschnittmitte rund 46 Einheiten westlich davon; auf schmalen
+# Displays fiel die Ampelkreuzung dadurch aus dem sichtbaren Bereich.
+SCHULKREIS = (47.79290, 13.05385, 30.0)  # Mittelpunkt und Radius in Metern
+RAND = 52.0  # Luft um das Hervorgehobene, in Metern
+
+
+def _inhalt_bbox():
+    """Umschliessendes Rechteck des Hervorgehobenen, in Metern (Ost, Nord)."""
+    punkte = [en(p) for p in pts]
+    punkte += [en((m["lat"], m["lon"])) for m in MARKEN]
+    e, n = en((SCHULKREIS[0], SCHULKREIS[1]))
+    r = SCHULKREIS[2]
+    punkte += [(e - r, n - r), (e + r, n + r)]
+    return (
+        min(q[0] for q in punkte), max(q[0] for q in punkte),
+        min(q[1] for q in punkte), max(q[1] for q in punkte),
+    )
+
+
+_e0, _e1, _n0, _n1 = _inhalt_bbox()
+VIEW = dict(
+    lon0=pts[0][1] + (_e0 - RAND) / KX,
+    lon1=pts[0][1] + (_e1 + RAND) / KX,
+    lat0=pts[0][0] + (_n0 - RAND) / R,
+    lat1=pts[0][0] + (_n1 + RAND) / R,
+)
 VW = (VIEW["lon1"] - VIEW["lon0"]) * KX
 VH = (VIEW["lat1"] - VIEW["lat0"]) * R
 
@@ -551,7 +578,8 @@ ROAD_W = {
 }
 
 
-def strassenlabel(name, blocker, box=None, nur_wege=None, schrift=9.0):
+def strassenlabel(name, blocker, box=None, nur_wege=None, schrift=9.0,
+                  mindestabstand=17.0):
     """Beschriftung entlang der echten Strassengeometrie platzieren.
 
     Sucht auf dem Strassenverlauf die Stelle mit dem groessten Abstand zu den
@@ -600,7 +628,7 @@ def strassenlabel(name, blocker, box=None, nur_wege=None, schrift=9.0):
         )
         if bestes is None or abstand > bestes[0]:
             bestes = (abstand, px, py, ux, uy)
-    if not bestes or bestes[0] < 17:
+    if not bestes or bestes[0] < mindestabstand:
         return None
     _, px, py, ux, uy = bestes
     if ux < 0:  # Text immer von links nach rechts lesbar
@@ -714,16 +742,26 @@ def lagekarte(standalone=False):
     blocker.append((sx, sy))  # Schulcluster-Kreis
 
     def setze(txt, schrift, farbe, gewicht, spacing, **kw):
+        # Erst mit komfortablem Abstand versuchen. Nur wenn dann gar kein Platz
+        # bleibt, enger ruecken, statt die Beschriftung ganz wegzulassen.
         pos = strassenlabel(txt, blocker, box, schrift=schrift, **kw)
+        if not pos:
+            pos = strassenlabel(
+                txt, blocker, box, schrift=schrift, mindestabstand=11.0, **kw
+            )
         if not pos:
             return ""
         x, y, rot = pos
-        # Die gesetzte Beschriftung blockiert nachfolgende
+        # Die gesetzte Beschriftung blockiert nachfolgende, und zwar ueber ihre
+        # ganze Laenge. Frueher waren es nur drei Punkte im Abstand von 20
+        # Einheiten; bei langen Namen wie "Nonntaler Hauptstrasse" blieben die
+        # Enden ungeschuetzt und die naechste Beschriftung legte sich darueber.
+        halb = 0.27 * schrift * len(txt)
+        ux = math.cos(math.radians(rot))
+        uy = math.sin(math.radians(rot))
         blocker.extend(
-            [(x, y), (x - 20 * math.cos(math.radians(rot)),
-                      y - 20 * math.sin(math.radians(rot))),
-             (x + 20 * math.cos(math.radians(rot)),
-              y + 20 * math.sin(math.radians(rot)))]
+            (x + ux * t, y + uy * t)
+            for t in (-halb, -halb / 2, 0.0, halb / 2, halb)
         )
         return (
             f'<text x="{x:.1f}" y="{y:.1f}" '
@@ -766,21 +804,23 @@ def lagekarte(standalone=False):
     o.append("</g>")
 
     # ---- Nordpfeil, Massstab, Quellenangabe
+    # Rechts unten: seit der Zentrierung auf den Inhalt laeuft der
+    # Korridor in die linke untere Ecke und kollidierte dort mit beidem.
     o.append(
-        f'<g opacity="0.8"><path d="M26 {VH-54:.0f} L26 {VH-76:.0f} '
-        f'M21 {VH-69:.0f} L26 {VH-76:.0f} L31 {VH-69:.0f}" fill="none" '
+        f'<g opacity="0.8"><path d="M{VW-26} {VH-54:.0f} L{VW-26} {VH-76:.0f} '
+        f'M{VW-31} {VH-69:.0f} L{VW-26} {VH-76:.0f} L{VW-21} {VH-69:.0f}" fill="none" '
         f'stroke="{c("ink")}" stroke-width="1.6" stroke-linecap="round" '
         f'stroke-linejoin="round"/>'
-        f'<text x="26" y="{VH-41:.0f}" text-anchor="middle" {FONT} font-size="9" '
+        f'<text x="{VW-26}" y="{VH-41:.0f}" text-anchor="middle" {FONT} font-size="9" '
         f'font-weight="700" fill="{c("ink")}">N</text></g>'
     )
     o.append(
-        f'<g><path d="M62 {VH-46:.0f} h100" stroke="{c("ink")}" stroke-width="2.4"/>'
-        f'<path d="M62 {VH-51:.0f} v10 M112 {VH-50:.0f} v8 M162 {VH-51:.0f} v10" '
+        f'<g><path d="M{VW-190} {VH-46:.0f} h100" stroke="{c("ink")}" stroke-width="2.4"/>'
+        f'<path d="M{VW-190} {VH-51:.0f} v10 M{VW-140} {VH-50:.0f} v8 M{VW-90} {VH-51:.0f} v10" '
         f'stroke="{c("ink")}" stroke-width="1.4"/>'
-        f'<text x="62" y="{VH-54:.0f}" {FONT} font-size="9" font-weight="600" '
+        f'<text x="{VW-190}" y="{VH-54:.0f}" {FONT} font-size="9" font-weight="600" '
         f'fill="{c("ink")}">0</text>'
-        f'<text x="162" y="{VH-54:.0f}" text-anchor="middle" {FONT} font-size="9" '
+        f'<text x="{VW-90}" y="{VH-54:.0f}" text-anchor="middle" {FONT} font-size="9" '
         f'font-weight="600" fill="{c("ink")}">100 m</text></g>'
     )
     o.append(

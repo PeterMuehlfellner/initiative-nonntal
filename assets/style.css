@@ -186,11 +186,11 @@ figure { margin: 0; }
 
 /* Auf schmalen Displays werden die Grafiken sonst unlesbar klein:
    lieber im eigenen Rahmen seitlich scrollen als die Seite stauchen. */
-@media (max-width: 760px) {
-  .figur__rahmen { overflow-x: auto; overscroll-behavior-x: contain; }
-  .karte--geo { min-width: 560px; }
-  .karte--quer, .karte--halt { min-width: 680px; }
-}
+/* Der Lageplan passt sich der Breite an. Sein Ausschnitt ist in
+   daten/build.py auf den Schwerpunkt des Hervorgehobenen zentriert, deshalb
+   braucht er auf schmalen Displays kein seitliches Scrollen mehr. Die beiden
+   Langdiagramme stehen nicht auf der Seite; sie werden einzeln als SVG
+   weitergegeben und brauchen hier keine Regel. */
 figcaption { font-size: .85rem; color: var(--k-inksoft); margin-top: .85rem;
   max-width: 76ch; }
 
