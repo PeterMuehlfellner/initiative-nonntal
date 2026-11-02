@@ -1,122 +1,130 @@
 # Initiative Erzabt-Klotz-Straße
 
-Eine statische Website zur Verkehrssituation in der Erzabt-Klotz-Straße in
-Salzburg-Nonntal: 234 Meter nahezu gerade Fahrbahn mit Tempo 50 und 266 Meter ohne
-Querungsmöglichkeit, zwischen zehn Bildungseinrichtungen. Eine seit Langem
-bekannte Situation, nachgemessen.
+A static website about the traffic situation on Erzabt-Klotz-Straße in
+Salzburg-Nonntal: 234 metres of near-straight carriageway with a 50 km/h limit,
+280 metres without a secured crossing, in the middle of seven schools and two
+kindergartens. A long-standing situation, measured out.
 
-Kein Build-Schritt, keine Abhängigkeiten, keine Tracker, keine Datenerhebung.
-`index.html` im Browser öffnen genügt.
+The site itself is in German, because its audience and its addressee are. The
+code, the comments, the data keys and the IDs that scripts and styles hook into
+are in English. The anchor fragments stay German (`#inhalt`, `#mitmachen`,
+`#massnahmen`): they show up in the address bar and in shared links, so they
+belong to the page, not to the code.
 
-## Veröffentlichen
+No build step, no dependencies, no trackers, no data collection. Opening
+`index.html` in a browser is enough.
 
-Den gesamten Ordner auf einen beliebigen Webspace legen, GitHub Pages, Netlify,
-Uberspace, jeder Hosting-Tarif. Es gibt nichts zu kompilieren.
+## Publishing
+
+Put the whole folder on any webspace: GitHub Pages, Netlify, Uberspace, any
+hosting plan. There is nothing to compile.
 
 ```bash
-# lokal ansehen
+# view locally
 python3 -m http.server 8000
-# → http://localhost:8000
+# -> http://localhost:8000
 ```
 
-Vor dem Veröffentlichen unter eigener Domain bitte noch erledigen:
+Still to do before publishing under its own domain:
 
-- [x] **Impressum** nach § 25 MedienG: Name, Wohnort, Gegenstand und
-      grundlegende Richtung stehen im Fußbereich
-- [ ] **E-Mail-Adressen** im Abschnitt „Mitmachen" gegenprüfen
-      (Stand der Recherche: Oktober 2026)
+- [x] **Impressum** under § 25 MedienG: name, place of residence, subject and
+      editorial direction are in the footer
+- [ ] **E-mail addresses** in the "Mitmachen" section need checking
+      (researched November 2026)
 
+Separately, and to be sent **once** by **one** person: `data/ifg-request.md`, a
+freedom-of-information request to the City of Salzburg under the
+Informationsfreiheitsgesetz. It asks for the traffic volumes, speed and noise
+data the site currently lacks. Four-week deadline.
 
-Unabhängig davon, und nur **einmal** von **einer** Person zu senden:
-`daten/ifg-anfrage.md`, ein Informationsbegehren nach dem
-Informationsfreiheitsgesetz an die Stadt Salzburg. Es fragt die Verkehrsmengen,
-Geschwindigkeits- und Lärmdaten ab, die auf der Seite derzeit fehlen. Vier
-Wochen Frist.
-
-## Aufbau
+## Layout
 
 ```
-index.html              die Seite; Texte hier bearbeiten
+index.html              the page; edit the German copy here
 assets/
-  style.css             Layout und Typografie (von Hand)
-  app.js                Legende, Hell/Dunkel, E-Mail-Entwurf (von Hand)
-  palette.css           ← erzeugt: Farben, auch für die Grafiken
-  karten.js             ← erzeugt: alle Grafiken als JS-Strings
-  karte-*.svg           ← erzeugt: dieselben Grafiken einzeln
-medien/                 Fotos für Schreiben, Presse und Aushang
-                        (nicht auf der Website eingebunden)
-daten/
-  build.py              erzeugt Grafiken und Messwerte
-  einzeldatei.py        packt alles in eine einzige HTML-Datei
-  ifg-anfrage.md        Informationsbegehren an die Stadt (einmal zu senden)
-  osm.json, poi.json    OpenStreetMap-Rohdaten
-  overpass-*.ql         die Abfragen, mit denen sie geholt wurden
-  messwerte.json        ← erzeugt: alle Zahlen der Seite, nachprüfbar
-einzelseite.html        ← erzeugt: die ganze Seite als eine Datei
+  style.css             layout and typography (hand-written)
+  app.js                legend, light/dark, e-mail draft (hand-written)
+  palette.css           <- generated: colours, shared with the figures
+  figures.js            <- generated: every figure as a JS string
+  figure-*.svg          <- generated: the same figures standalone
+media/                  photos for the letter, the press and a notice board
+                        (not embedded in the website)
+data/
+  build.py              generates the figures and the measurements
+  bundle.py             packs everything into a single HTML file
+  ifg-request.md        information request to the city (send once)
+  osm.json, poi.json    raw OpenStreetMap data
+  overpass-*.ql         the queries that fetched it
+  measurements.json     <- generated: every number on the page, checkable
+single-page.html        <- generated: the whole page as one file
 ```
 
-Die mit ← markierten Dateien nicht von Hand bearbeiten, sie werden überschrieben.
+Do not hand-edit the files marked <-, they get overwritten.
 
-### Eine Datei zum Weitergeben
+### One file to pass around
 
 ```bash
-python3 daten/einzeldatei.py
+python3 data/bundle.py
 ```
 
-Schreibt `einzelseite.html`, die vollständige Seite inklusive aller Grafiken in
-einer einzigen Datei (rund 120 kB). Praktisch als E-Mail-Anhang, zum Archivieren
-oder als Beilage zu einer Eingabe. Per Doppelklick im Browser zu öffnen, ohne
-Server.
+Writes `single-page.html`, the complete page including every figure in a single
+file (about 110 kB). Useful as an e-mail attachment, for archiving, or as an
+enclosure to a submission. Opens on a double click, no server needed.
 
-## Grafiken neu erzeugen
+## Regenerating the figures
 
 ```bash
-python3 daten/build.py
+python3 data/build.py
 ```
 
-Braucht nur die Standardbibliothek. Das Skript rechnet alle Längen, Winkel und
-Anhaltewege aus der OSM-Geometrie und schreibt sie zugleich nach
-`daten/messwerte.json`, jede Zahl auf der Seite ist damit nachvollziehbar.
+Needs nothing but the standard library. The script computes every length,
+angle and stopping distance from the OSM geometry and writes them to
+`data/measurements.json` at the same time, so every number on the page can be
+traced back.
 
-Rohdaten aktualisieren (nur nötig, wenn sich vor Ort etwas ändert):
+Updating the raw data (only needed when something changes on the ground):
 
 ```bash
-# Straßennetz          → daten/osm.json
-# Schulen, Kindergärten usw. → daten/poi.json  (overpass-poi.ql)
+# street network            -> data/osm.json
+# schools, kindergartens... -> data/poi.json  (overpass-poi.ql)
 curl -X POST https://overpass-api.de/api/interpreter \
   -H "User-Agent: initiative-erzabt-klotz-strasse/1.0" \
-  --data-binary @daten/overpass-netz.ql -o daten/osm.json
+  --data-binary @data/overpass-network.ql -o data/osm.json
 ```
 
-Der öffentliche Overpass-Server antwortet gelegentlich mit „502 at capacity" dann kurz warten und erneut versuchen. Die Antwort vor dem Überschreiben auf
-gültiges JSON prüfen.
+The public Overpass server occasionally answers "502 at capacity"; wait a
+moment and retry. Check the response is valid JSON before overwriting.
 
-## Kernzahlen
+## Key figures
 
-| Größe | Wert | Herkunft |
+Current values from `data/measurements.json` (OSM state 2026-10-30).
+
+| Quantity | Value | Source |
 |---|---:|---|
-| Abschnitt Ampel → Kurve | 277,1 m | OSM-Geometrie |
-| davon nahezu gerade | 233,9 m | Richtungsabweichung ±4,6° |
-| Knick in die Nonntaler Hauptstraße | 46,9° | OSM-Geometrie |
-| Tempolimit | 50 km/h | `maxspeed` |
-| Querschnitt | 3 Fahrstreifen | `lanes=3`, davon eine Busspur |
-| Versatz der beiden Haltestellen | 43,8 m | OSM-Geometrie |
-| zwischen den nächsten Querungen | 266,1 m | OSM-Geometrie |
-| Weg zur nächsten legalen Querung | 99 m / 123 m | OSM-Geometrie |
-| Anhalteweg 30 / 50 / 60 km/h | 13 / 26 / 34 m | 1,0 s Reaktion, 8 m/s² |
-| Schul- und Bildungsstandorte < 600 m | 10 | OSM, entdoppelt |
+| Section, signal to curve | 291.0 m | OSM geometry |
+| of which near-straight | 233.9 m | bearing spread ±4.6° |
+| Curve into Nonntaler Hauptstraße | 74.4° | OSM geometry |
+| Speed limit | 50 km/h | `maxspeed` |
+| Cross section | 2 lanes + bus lane | `lanes=3`, one of them a bus lane |
+| Offset between the two bus stops | 0.0 m | surveyed on site, they face each other |
+| Beyond the only crossing | 280.0 m | OSM geometry |
+| Bus stop to the nearest crossing | 123 m | OSM geometry |
+| Stopping distance 30 / 50 / 60 km/h | 13 / 26 / 34 m | 1.0 s reaction, 8 m/s² |
+| Schools for children within 600 m | 7 | OSM, deduplicated |
+| Kindergartens within 600 m | 2 | OSM, deduplicated |
+| Nearest facility for children | 124 m | OSM geometry |
 
-## Grafiken weiterverwenden
+## Reusing the figures
 
-Die drei SVG-Dateien in `assets/` sind eigenständig und enthalten ihre eigene
-Legende, sie lassen sich direkt in Schreiben an die Behörde, Presseanfragen
-oder Aushänge einfügen. Sie passen sich hellen und dunklen Ansichten an.
+The three SVG files in `assets/` stand on their own and carry their own
+legend, so they can be dropped straight into letters to the authority, press
+enquiries or a notice board. They adapt to light and dark viewing.
 
-## Lizenz und Herkunft
+## Licence and provenance
 
-Geodaten © OpenStreetMap-Mitwirkende, [ODbL](https://www.openstreetmap.org/copyright).
-Bei Weiterverwendung der Karten diesen Hinweis mitführen, er steht bereits in
-jeder Grafik.
+Geodata © OpenStreetMap contributors,
+[ODbL](https://www.openstreetmap.org/copyright). Carry this notice when reusing
+the maps; it is already printed in every figure.
 
-Die Seite ist eine private Anrainerinitiative, kein Angebot der Stadt Salzburg
-und mit keiner Partei verbunden.
+This is a private residents' initiative. It is not an offering of the City of
+Salzburg and is not affiliated with any political party.

@@ -1,6 +1,6 @@
 # Fotostandorte
 
-Automatisch erzeugt von `daten/build.py`. Standort und Blickrichtung sind
+Automatisch erzeugt von `data/build.py`. Standort und Blickrichtung sind
 aus der Straßengeometrie gerechnet. Die Aufnahmen sind für das Schreiben
 an die Stadt, für Presseanfragen und für einen Aushang gedacht; auf der
 Website selbst sind keine Fotos eingebunden.
@@ -56,4 +56,4 @@ Seite müssen selbst aufgenommen werden.
 
 Beste Zeit für den Schulweg: werktags 7:15–8:00 Uhr und 12:00–13:30 Uhr.
 Querformat, und bitte ohne erkennbare Gesichter und Kennzeichen; Hinweise
-dazu in `medien/README.md`.
+dazu in `media/README.md`.

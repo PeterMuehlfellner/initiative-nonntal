@@ -5,7 +5,7 @@ gehalten. Aufnahmen sind trotzdem nützlich, nämlich als Beilage zum Schreiben
 an die Stadt, für Presseanfragen und für einen Aushang im Haus. Ein Foto der
 Querungssituation sagt dort mehr als jede Längenangabe.
 
-`standorte.md` in diesem Ordner nennt sechs Standorte mit Koordinaten und
+`locations.md` in diesem Ordner nennt sechs Standorte mit Koordinaten und
 Blickrichtung, aus der Straßengeometrie gerechnet. Wer sich daran hält,
 bekommt Aufnahmen, die zu den Diagrammen in `assets/` passen.
 

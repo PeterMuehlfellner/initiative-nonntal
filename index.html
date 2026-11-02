@@ -11,7 +11,7 @@
 <meta property="og:locale" content="de_AT">
 <meta property="og:title" content="Erzabt-Klotz-Straße: auf 280 Metern kein gesicherter Übergang">
 <meta property="og:description" content="Zwei Fahrstreifen und eine Busspur, Tempo 50, sieben Schulen im Umkreis. Der einzige gesicherte Übergang liegt an der Ampelkreuzung, 123 Meter von den Haltestellen entfernt.">
-<meta property="og:image" content="assets/karte-geo.svg">
+<meta property="og:image" content="assets/figure-site-plan.svg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#f2f5f6" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0f1315" media="(prefers-color-scheme: dark)">
@@ -21,15 +21,15 @@
 </head>
 <body>
 
-<a class="springlink" href="#inhalt">Zum Inhalt springen</a>
+<a class="skiplink" href="#inhalt">Zum Inhalt springen</a>
 
-<header class="kopf">
-  <div class="kopf__innen">
-    <div class="kopf__titel">Erzabt-Klotz-Straße <span>· Anwohnerinitiative Nonntal</span></div>
+<header class="masthead">
+  <div class="masthead__inner">
+    <div class="masthead__title">Erzabt-Klotz-Straße <span>· Anwohnerinitiative Nonntal</span></div>
     <nav>
       <a href="#massnahmen">Vorschläge</a>
       <a href="#mitmachen">Mitmachen</a>
-      <button class="thema" id="thema" type="button" aria-label="Zwischen hellem und dunklem Erscheinungsbild wechseln">
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Zwischen hellem und dunklem Erscheinungsbild wechseln">
         <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" focusable="false">
           <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
           <path d="M12 3a9 9 0 0 0 0 18Z" fill="currentColor"/>
@@ -41,12 +41,12 @@
 
 <main id="inhalt">
 
-<!-- ====================================================== Kopfbereich === -->
+<!-- ========================================================== Hero === -->
 <section class="hero">
-  <div class="bahn">
-    <div class="kopfbereich">
+  <div class="wrap">
+    <div class="hero-grid">
       <div>
-        <p class="hero__ort">Salzburg-Nonntal</p>
+        <p class="hero__place">Salzburg-Nonntal</p>
         <h1>Tempo 50, und auf 280 Metern kein gesicherter Übergang</h1>
 <p class="hero__lead">
           Die Erzabt-Klotz-Straße ist hier Landesstraße L&nbsp;104: zwei
@@ -60,29 +60,29 @@
           gesicherte Querung. Gequert wird trotzdem,
           täglich, über die ganze Fahrbahn.
         </p>
-        <div class="knopfreihe">
-          <a class="knopf" href="#mitmachen">Mitschreiben an die Stadt</a>
-          <a class="knopf knopf--leer" href="#massnahmen">Die Vorschläge</a>
+        <div class="buttonrow">
+          <a class="button" href="#mitmachen">Mitschreiben an die Stadt</a>
+          <a class="button button--outline" href="#massnahmen">Die Vorschläge</a>
         </div>
       </div>
 
-      <figure class="figur" style="margin-top:0">
-        <div class="figur__rahmen" id="karte-geo">
-          <noscript><img src="assets/karte-geo.svg" alt="Lageplan der Erzabt-Klotz-Straße mit nummerierten Markierungen und Legende."></noscript>
+      <figure class="figure" style="margin-top:0">
+        <div class="figure__frame" id="figure-site">
+          <noscript><img src="assets/figure-site-plan.svg" alt="Lageplan der Erzabt-Klotz-Straße mit nummerierten Markierungen und Legende."></noscript>
         </div>
-        <ol class="legende legende--kompakt" id="legende" aria-label="Legende zum Lageplan"></ol>
+        <ol class="legend legend--compact" id="legend" aria-label="Legende zum Lageplan"></ol>
       </figure>
     </div>
   </div>
 </section>
 
-<!-- ====================================================== Mitmachen === -->
-<section id="mitmachen" class="mitmachen">
-  <div class="bahn">
-    <p class="marke-klein">Mitmachen</p>
+<!-- =================================================== Participate === -->
+<section id="mitmachen" class="participate">
+  <div class="wrap">
+    <p class="eyebrow">Mitmachen</p>
     <h2>Schreiben Sie der Stadt</h2>
-    <div class="prosa" style="margin-inline:0">
-      <p class="vorspann">
+    <div class="prose" style="margin-inline:0">
+      <p class="intro">
         Diese Seite sammelt keine Unterschriften und speichert keine Daten.
         Wirksam sind einzelne Zuschriften von Anrainerinnen und Anrainern. Unten
         steht ein Entwurf; bitte ändern Sie ihn ab, bevor Sie ihn abschicken.
@@ -91,9 +91,9 @@
       </p>
     </div>
 
-    <div class="briefkasten">
+    <div class="letterbox">
       <h3>Empfängerinnen und Empfänger</h3>
-      <ul class="empfaenger">
+      <ul class="recipients">
         <li><b>Verkehrs- und Straßenrechtsamt (MA 1/07)</b> <code>post@stadt-salzburg.at</code>
           <span style="width:100%;color:var(--k-inksoft);font-size:.9em">die zuständige Behörde</span></li>
         <li><b>Stadträtin Anna Schiester</b> <code>stadtraetin.schiester@stadt-salzburg.at</code>
@@ -101,22 +101,22 @@
         <li><b>Bürgermeister Bernhard Auinger</b> <code>bgm@stadt-salzburg.at</code>
           <span style="width:100%;color:var(--k-inksoft);font-size:.9em">in Kopie</span></li>
       </ul>
-      <p class="hinweis" style="margin-top:-.4rem">
+      <p class="note" style="margin-top:-.4rem">
         Das Anliegen geht an die Fachbehörde und an das politisch zuständige
         Ressort. Es richtet sich gegen keine Partei und gegen keine Person.
         Ihre Adresse gehört in das Schreiben, weil sie Sie als Anrainerin oder
         Anrainer ausweist; sie geht ausschließlich an diese drei Stellen.
       </p>
 
-      <label for="entwurf" class="sr-only">Textentwurf für Ihre Zuschrift</label>
-      <textarea class="entwurf" id="entwurf" spellcheck="true"></textarea>
+      <label for="draft" class="sr-only">Textentwurf für Ihre Zuschrift</label>
+      <textarea class="draft" id="draft" spellcheck="true"></textarea>
 
-      <div class="knopfreihe" style="margin-top:0">
-        <a class="knopf" id="mailto" href="#">E-Mail-Programm öffnen</a>
-        <button class="knopf knopf--leer" id="kopieren" type="button">Text kopieren</button>
+      <div class="buttonrow" style="margin-top:0">
+        <a class="button" id="mailto" href="#">E-Mail-Programm öffnen</a>
+        <button class="button button--outline" id="copy" type="button">Text kopieren</button>
       </div>
 
-      <p class="hinweis">
+      <p class="note">
         Der Knopf öffnet Ihr eigenes E-Mail-Programm mit dem Text von oben.
         Nichts wird an diese Seite übermittelt. Falls sich nichts öffnet,
         kopieren Sie den Text und schicken Sie ihn von Hand an die drei
@@ -127,14 +127,14 @@
   </div>
 </section>
 
-<!-- ====================================================== Maßnahmen === -->
+<!-- ===================================================== Proposals === -->
 <section id="massnahmen">
-  <div class="bahn">
-    <p class="marke-klein">Die Anliegen</p>
+  <div class="wrap">
+    <p class="eyebrow">Die Anliegen</p>
     <h2>Drei Vorschläge</h2>
 
-    <ol class="forderungen">
-      <li class="forderung">
+    <ol class="proposal-list">
+      <li class="proposal">
         <h3>Eine Mittelinsel auf Höhe der Haltestellen</h3>
         <p>
           Eine Mittelinsel teilt die Querung in zwei Schritte, sodass niemand
@@ -145,7 +145,7 @@
           würde die Sicherheit der Fußgänger weiter erhöhen.
         </p>
       </li>
-      <li class="forderung">
+      <li class="proposal">
         <h3>Tempo 30 auf dem Abschnitt</h3>
         <p>
           Zwischen der Kreuzung Petersbrunnstraße/Akademiestraße und der
@@ -155,7 +155,7 @@
           (§ 43 Abs. 4a StVO).
         </p>
       </li>
-      <li class="forderung">
+      <li class="proposal">
         <h3>Kürzere Wartezeiten an den Bedarfsampeln</h3>
         <p>
           Eine raschere Grünschaltung für Fußgänger an der Kreuzung. Die
@@ -165,7 +165,7 @@
       </li>
     </ol>
 
-    <div class="prosa" style="margin-inline:0">
+    <div class="prose" style="margin-inline:0">
       <h3 style="margin-top:2.8rem">Wird der Verkehr dadurch langsamer?</h3>
       <p>
         Das ist der häufigste Einwand, und er ist gut untersucht. Eine
@@ -203,10 +203,10 @@
 
 </main>
 
-<!-- ============================================================ Fuß === -->
-<footer class="fuss">
-  <div class="bahn">
-    <div class="fuss__raster">
+<!-- ======================================================== Footer === -->
+<footer class="sitefoot">
+  <div class="wrap">
+    <div class="sitefoot__grid">
       <div>
         <h3>Zu dieser Seite</h3>
         <p>
@@ -241,7 +241,7 @@
           Alle Längen und Abstände auf dieser Seite sind aus den offenen
           Kartendaten von OpenStreetMap berechnet, nicht geschätzt. Wer
           nachrechnen möchte, findet jeden Wert in
-          <a href="daten/messwerte.json">messwerte.json</a>.
+          <a href="data/measurements.json">measurements.json</a>.
         </p>
         <p>© OpenStreetMap-Mitwirkende, ODbL</p>
       </div>
@@ -259,7 +259,7 @@
   </div>
 </footer>
 
-<script src="assets/karten.js"></script>
+<script src="assets/figures.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>
